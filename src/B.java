@@ -6,7 +6,7 @@ public class B {
         int X = scanner.nextInt();
         int Y = scanner.nextInt();
 
-        int[][] A = {{1, 1, 6}, {4, 2, Y}};
+        int[][] A = {{1, 1, X}, {4, 2, Y}};
 
         if (Y / X == 2) {
             System.out.println("Yes");
@@ -19,7 +19,7 @@ public class B {
                 for (i = k; i < 2; i++)
                     A[k][i] /= p;  // ピボット係数を１にするためピボット行を割り算
 
-                for (i = 0; i < 2; i++) {// ピボット列の掃き出し
+                for (i = 0; i < 3; i++) {// ピボット列の掃き出し
                     if (i != k) {
                         double d = A[i][k];
                         for (int j = k; j < 2; j++) {
